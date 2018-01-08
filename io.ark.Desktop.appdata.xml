@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>io.ark.Desktop.desktop</id>
+  <name>ARK Desktop Wallet</name>
+  <developer_name>ARK</developer_name>
+  <summary>Wallet for ARK</summary>
+  <description>
+    <p>The ARK Desktop Wallet is natively built for all major Operating Systems. Our full HD wallet meets the top security standards in the industry and supports the Ledger Nano S secure hardware wallet. ARK wallets connect to fully synced network peers removing the need to download the full blockchain. With the ARK wallet you are up and running as soon as it’s installed, no more syncing! And, with 8 second block times you can actually see your transactions occur in real time! No more checking in every 30 minutes to see if your transactions were confirmed.</p>
+  </description>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <url type="homepage">https://ark.io/</url>
+  <screenshots>
+    <screenshot type="default">https://i.imgur.com/AVdyM16.jpg</screenshot>
+    <screenshot>https://i.imgur.com/DD8fx1O.jpg</screenshot>
+  </screenshots>
+  <releases>
+    <release date="2017-11-21" version="1.4.3"/>
+  </releases>
+  <update_contact>tingping_at_fedoraproject.org</update_contact>
+</component>

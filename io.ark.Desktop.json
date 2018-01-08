@@ -1,0 +1,79 @@
+{
+  "app-id": "io.ark.Desktop",
+  "branch": "stable",
+  "base": "io.atom.electron.BaseApp",
+  "base-version": "stable",
+  "runtime": "org.freedesktop.Platform",
+  "runtime-version": "1.6",
+  "sdk": "org.freedesktop.Sdk",
+  "command": "arkclient",
+  "separate-locales": false,
+  "finish-args": [
+    "--share=ipc",
+    "--share=network",
+    "--socket=x11",
+    "--device=all"
+  ],
+  "modules": [
+    {
+      "name": "libusb",
+      "config-opts": [ "--disable-static", "--disable-udev" ],
+      "cleanup": [
+        "/lib/*.la",
+        "/lib/pkgconfig",
+        "/include"
+      ],
+      "sources": [
+        {
+          "type":"archive",
+          "url":"https://github.com/libusb/libusb/archive/v1.0.21.tar.gz",
+          "sha256": "1a5b08c05bc5e38c81c2d59c29954d5916646f4ff46f51381b3f624384e4ac01"
+        }
+      ],
+      "post-install": [
+        "install -Dm644 COPYING /app/share/licenses/libusb/COPYING"
+      ]
+    },
+    {
+      "name": "ark",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -Dm644 io.ark.Desktop.desktop /app/share/applications/io.ark.Desktop.desktop",
+        "install -Dm644 io.ark.Desktop.appdata.xml /app/share/appdata/io.ark.Desktop.appdata.xml",
+        "install -Dm644 ark.png /app/share/icons/hicolor/256x256/apps/io.ark.Desktop.png",
+        "install -D arkclient /app/bin/arkclient",
+
+        "tar -xf ArkClient-*.tar.xz",
+        "install -d /app/share/ArkClient",
+        "mv ArkClient*/* /app/share/ArkClient"
+      ],
+      "sources": [
+        {
+          "type": "script",
+          "dest-filename": "arkclient",
+          "commands": [
+            "exec env TMPDIR=$XDG_CACHE_HOME /app/share/ArkClient/arkclient $@"
+          ]
+        },
+        {
+          "type": "file",
+          "url": "https://github.com/ArkEcosystem/ark-desktop/releases/download/1.4.3/ArkClient-Linux-1.4.3.tar.xz",
+          "sha256": "2c2c73b4d378eb79b8f849fbb52f63df58864c4d67e5b32a60c43dce703a3ea3"
+        },
+        {
+          "type": "file",
+          "url": "https://github.com/ArkEcosystem/ark-desktop/raw/f830f9d8ee3b140703ab3903761ec4a09fdaed3c/client/app/ark.png",
+          "sha256": "e04883adf59db8e4a95db21642f50c30bb2769f253764a41e22e3b65d35795f0"
+        },
+        {
+          "type": "file",
+          "path": "io.ark.Desktop.desktop"
+        },
+        {
+          "type": "file",
+          "path": "io.ark.Desktop.appdata.xml"
+        }
+      ]
+    }
+  ]
+}
