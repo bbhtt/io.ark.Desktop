@@ -15,7 +15,7 @@
     <screenshot>https://i.imgur.com/DD8fx1O.jpg</screenshot>
   </screenshots>
   <releases>
-    <release date="2018-01-09" version="1.5.0"/>
+    <release date="2018-01-25" version="1.5.1"/>
   </releases>
   <update_contact>tingping_at_fedoraproject.org</update_contact>
 </component>

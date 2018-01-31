@@ -57,8 +57,8 @@
         },
         {
           "type": "file",
-          "url": "https://github.com/ArkEcosystem/ark-desktop/releases/download/1.5.0/ArkClient-Linux-1.5.0.tar.xz",
-          "sha256": "8ba77917320bcf93059903b70c3b71eb79b82f3d82bd68b43309ebb03d82d1bd"
+          "url": "https://github.com/ArkEcosystem/ark-desktop/releases/download/1.5.1/ArkClient-Linux-1.5.1.tar.xz",
+          "sha256": "8c155fd366e2afde25a77eb5b03c9df40e84f1f0eed29e2a3744175a288ec03e"
         },
         {
           "type": "file",
