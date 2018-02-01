@@ -3,5 +3,6 @@ Type=Application
 Terminal=false
 Name=Ark Desktop Wallet
 Keywords=crypto;coin;currency;
+Categories=Utility;
 Exec=arkclient
 Icon=io.ark.Desktop
