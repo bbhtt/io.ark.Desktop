@@ -2,9 +2,9 @@
   "app-id": "io.ark.Desktop",
   "branch": "stable",
   "base": "io.atom.electron.BaseApp",
-  "base-version": "stable",
+  "base-version": "18.08",
   "runtime": "org.freedesktop.Platform",
-  "runtime-version": "1.6",
+  "runtime-version": "18.08",
   "sdk": "org.freedesktop.Sdk",
   "command": "arkclient",
   "separate-locales": false,
@@ -57,7 +57,7 @@
         },
         {
           "type": "file",
-          "url": "https://github.com/ArkEcosystem/ark-desktop/releases/download/1.6.1/ArkClient-Linux-1.6.1.tar.xz",
+          "url": "https://github.com/ArkEcosystem/desktop-wallet/releases/download/1.6.1/ArkClient-Linux-1.6.1.tar.xz",
           "sha256": "72d08a0827fe30e7317b392683c28b62cb5f43687d8ec368b2d11211f2c5a5ea"
         },
         {
