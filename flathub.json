@@ -1,3 +1,4 @@
 {
-  "only-arches": ["x86_64"]
+  "only-arches": ["x86_64"],
+  "end-of-life": "ARK Desktop Wallet is end-of-life. Please use the new ARKVault wallet instead."
 }

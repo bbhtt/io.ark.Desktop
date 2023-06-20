@@ -18,4 +18,5 @@
     <release date="2018-08-16" version="1.6.1"/>
   </releases>
   <update_contact>plusfabi@gmail.com</update_contact>
+  <content_rating type="oars-1.0" />
 </component>
